@@ -13,6 +13,7 @@ import java.util.Properties;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -31,10 +32,17 @@ public class BaseClass {
 		Properties pro= new Properties();
 		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\qa\\resources\\global.properties");
 		pro.load(fis);
-		String browserName=pro.getProperty("browser");
-		if(browserName.contains("chrome"))
+		String browserName=System.getProperty("browser")!=null ? System.getProperty("browser"): pro.getProperty("browser");
+		//String browserName=pro.getProperty("browser");
+		
+		if(browserName.contains("chrome"))				
 		{
-			driver = new ChromeDriver();
+			ChromeOptions options=new ChromeOptions();
+			if(browserName.contains("headless"))
+			{
+				options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
