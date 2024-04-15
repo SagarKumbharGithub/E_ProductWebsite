@@ -1,0 +1,6 @@
+qa\abstractComponents\AbstractComponents.class
+qa\pageObjects\ConfirmationPage.class
+qa\pageObjects\LoginPage.class
+qa\pageObjects\CartPage.class
+qa\pageObjects\ProductPage.class
+qa\pageObjects\PaymentPage.class

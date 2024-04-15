@@ -1,0 +1,5 @@
+qa\testComponents\BaseClass.class
+qa\testComponents\BaseClass$1.class
+qa\tests\TC_02_VerifyUserAbleToPlaceTheOrder.class
+StandloanTest.class
+qa\tests\TC_01_VerifyUserAbleToLoginIntoApplication.class
