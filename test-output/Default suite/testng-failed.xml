@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication">
+      <class name="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication_DDT">
         <methods>
           <include name="tearDown"/>
           <include name="intiziate_driver"/>
-          <include name="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials" invocation-numbers="1"/>
+          <include name="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication -->
+      </class> <!-- qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication_DDT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

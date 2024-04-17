@@ -37,6 +37,7 @@ public class TC_01_VerifyUserAbleToLoginIntoApplication extends BaseClass{
 		System.out.println("I am run with webhooks-Jenkins-2");
 	}
 	
+
 	@DataProvider(name="userDetails")
 	public Object[][] getData() throws IOException
 	{
@@ -66,4 +67,6 @@ public class TC_01_VerifyUserAbleToLoginIntoApplication extends BaseClass{
 		List<HashMap<String, String>> data=getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\qa\\testData\\invalidLoginDetails.json");
 		return new Object[][] {{data.get(0)},{data.get(1)}};
 	}
+	
+	
 }

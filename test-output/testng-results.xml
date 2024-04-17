@@ -1,96 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-15T09:47:45Z" name="Default suite" finished-at="2024-04-15T09:48:16Z" duration-ms="30577">
+  <suite started-at="2024-04-16T12:02:06Z" name="Default suite" finished-at="2024-04-16T12:02:17Z" duration-ms="10625">
     <groups>
       <group name="Regression">
-        <method signature="TC_01_VerifyUserAbleToLoginIntoApplication.verifyUserAbleToLoginIntoApplication(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" name="verifyUserAbleToLoginIntoApplication" class="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication"/>
-        <method signature="TC_01_VerifyUserAbleToLoginIntoApplication.verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" name="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials" class="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication"/>
+        <method signature="TC_02_VerifyUserAbleToPlaceTheOrder_DDT.verifyUserAbleToPlaceTheOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" name="verifyUserAbleToPlaceTheOrder" class="qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="TC_01_VerifyUserAbleToLoginIntoApplication.verifyUserAbleToLoginIntoApplication(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" name="verifyUserAbleToLoginIntoApplication" class="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication"/>
+        <method signature="TC_02_VerifyUserAbleToPlaceTheOrder_DDT.verifyUserAbleToPlaceTheOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" name="verifyUserAbleToPlaceTheOrder" class="qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-15T09:47:45Z" name="Default test" finished-at="2024-04-15T09:48:16Z" duration-ms="30577">
-      <class name="qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication">
-        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:47:45Z" name="intiziate_driver" finished-at="2024-04-15T09:47:54Z" duration-ms="9087" status="PASS">
+    <test started-at="2024-04-16T12:02:06Z" name="Default test" finished-at="2024-04-16T12:02:17Z" duration-ms="10625">
+      <class name="qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT">
+        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:07Z" name="intiziate_driver" finished-at="2024-04-16T12:02:10Z" duration-ms="2704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intiziate_driver -->
-        <test-method signature="verifyUserAbleToLoginIntoApplication(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:47:54Z" name="verifyUserAbleToLoginIntoApplication" data-provider="userDetails" finished-at="2024-04-15T09:47:55Z" duration-ms="657" status="PASS">
+        <test-method signature="verifyUserAbleToPlaceTheOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:10Z" name="verifyUserAbleToPlaceTheOrder" data-provider="PurchaseOrder" finished-at="2024-04-16T12:02:12Z" duration-ms="2738" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Sk@123456789, username=sagar95kumbhar@gmail.com}]]>
+                <![CDATA[sagar95kumbhar@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sk@123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IPHONE 13 PRO]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserAbleToLoginIntoApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:47:55Z" name="tearDown" finished-at="2024-04-15T09:47:56Z" duration-ms="1164" status="PASS">
+        </test-method> <!-- verifyUserAbleToPlaceTheOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:12Z" name="tearDown" finished-at="2024-04-16T12:02:12Z" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:47:56Z" name="intiziate_driver" finished-at="2024-04-15T09:48:01Z" duration-ms="5205" status="PASS">
+        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:12Z" name="intiziate_driver" finished-at="2024-04-16T12:02:14Z" duration-ms="1534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intiziate_driver -->
-        <test-method signature="verifyUserAbleToLoginIntoApplication(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:01Z" name="verifyUserAbleToLoginIntoApplication" data-provider="userDetails" finished-at="2024-04-15T09:48:02Z" duration-ms="480" status="PASS">
+        <test-method signature="verifyUserAbleToPlaceTheOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:14Z" name="verifyUserAbleToPlaceTheOrder" data-provider="PurchaseOrder" finished-at="2024-04-16T12:02:17Z" duration-ms="2717" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Rk@123456789, username=rutuja903@gmail.com}]]>
+                <![CDATA[rutuja903@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rk@123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserAbleToLoginIntoApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:02Z" name="tearDown" finished-at="2024-04-15T09:48:03Z" duration-ms="1197" status="PASS">
+        </test-method> <!-- verifyUserAbleToPlaceTheOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT@20ca951f]" started-at="2024-04-16T12:02:17Z" name="tearDown" finished-at="2024-04-16T12:02:17Z" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:03Z" name="intiziate_driver" finished-at="2024-04-15T09:48:08Z" duration-ms="4626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intiziate_driver -->
-        <test-method signature="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:08Z" name="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials" data-provider="userInvalidDetails" finished-at="2024-04-15T09:48:08Z" duration-ms="441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Sk@123456789, username=sagar95@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:08Z" name="tearDown" finished-at="2024-04-15T09:48:09Z" duration-ms="1159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="intiziate_driver()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:09Z" name="intiziate_driver" finished-at="2024-04-15T09:48:14Z" duration-ms="4602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intiziate_driver -->
-        <test-method signature="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials(java.util.HashMap)[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:14Z" name="verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials" data-provider="userInvalidDetails" finished-at="2024-04-15T09:48:14Z" duration-ms="434" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Sk@123456789, username=sagar@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWhetherApplicationProvidAlertMessageWithWrongUserCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication@20c0a64d]" started-at="2024-04-15T09:48:14Z" name="tearDown" finished-at="2024-04-15T09:48:16Z" duration-ms="1137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qa.tests.TC_01_VerifyUserAbleToLoginIntoApplication -->
+      </class> <!-- qa.tests.TC_02_VerifyUserAbleToPlaceTheOrder_DDT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
